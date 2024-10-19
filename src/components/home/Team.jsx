@@ -14,8 +14,11 @@ import {
   Zainab,
   Zarmeena,
   Zeeshan,
+  Afaq,
+  Nausherwan,
 } from "../../assets/images";
 import { Carousel } from "nuka-carousel";
+import { LinkedIn } from "@mui/icons-material";
 
 const teamCard = (team, index) => {
   return (
@@ -43,27 +46,65 @@ const teamCard = (team, index) => {
           "&:hover": { filter: "grayscale(0%)" },
         }}
       />
-      <Typography variant="normal">{team.name}</Typography>
+      <Box
+        sx={{
+          display: "flex",
+          gap: "10px",
+          pl: "10px",
+        }}
+      >
+        <Typography variant="normal">{team.name}</Typography>
+        <LinkedIn
+          sx={{ cursor: "pointer", color: "secondary.main" }}
+          onClick={() => window.open(team.linkedin, "_blank")}
+        />
+      </Box>
     </Box>
   );
 };
 
 function Team() {
   const teamData = [
-    { name: "Akbar", image: Akbar, role: "CEO" },
-    { name: "Amna", image: Amna, role: "COO" },
-    { name: "Basit", image: Basit, role: "CTO" },
-    { name: "Haziq", image: Haziq, role: "CFO" },
-    { name: "Manahil", image: Manahil, role: "CMO" },
-    { name: "Rabia", image: Rabia, role: "CIO" },
-    { name: "Rimza", image: Rimza, role: "CDO" },
-    { name: "Shaiq", image: Shaiq, role: "CRO" },
-    { name: "Shahmeer", image: Shahmeer, role: "CLO" },
-    { name: "Yalmaz", image: Yalmaz, role: "CSO" },
-    { name: "Zainab", image: Zainab, role: "CVO" },
-    { name: "Zarmeena", image: Zarmeena, role: "CPO" },
-    { name: "Zeeshan", image: Zeeshan, role: "CBO" },
+    {
+      name: "Shahmeer Zeeshan",
+      image: Shahmeer,
+      role: "CEO",
+      linkedin: "https://www.linkedin.com/in/shameer-zeeshan/",
+    },
+    {
+      name: "Haziq Hassan",
+      image: Haziq,
+      role: "CTO",
+      linkedin: "https://www.linkedin.com/in/haziq-hassan-fawad/",
+    },
+    {
+      name: "Zeeshan Hameed",
+      image: Zeeshan,
+      role: "CFO",
+      linkedin: "https://www.linkedin.com/in/zeeshan-hameed-5909372ab/",
+    },
+    {
+      name: "Nausherwan Fawad",
+      image: Nausherwan,
+      role: "Head of PMO",
+      linkedin: "https://www.linkedin.com/in/nausherwan-fawad-697769186/",
+    },
+    {
+      name: "Afaq Khan",
+      image: Afaq,
+      role: "Tech Lead",
+      linkedin: "https://www.linkedin.com/in/afaq-khan-2a327a198/",
+    },
   ];
+
+  const dummyItems = new Array(3).fill({
+    name: "",
+    image: null,
+    role: "",
+    linkedin: "",
+  });
+
+  console.log("teamData", teamData, dummyItems.length);
 
   return (
     <Box
@@ -149,6 +190,9 @@ function Team() {
                 wrapMode="wrap"
               >
                 {teamData.map((team, index) => teamCard(team, index))}
+                {dummyItems.map((team, index) => (
+                  <Box key={index} />
+                ))}
               </Carousel>
             </Box>
             {/* </Box> */}

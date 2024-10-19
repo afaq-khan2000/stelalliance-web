@@ -174,7 +174,7 @@ function Reviews() {
 
   return (
     <Box
-      id="work"
+      id="reviews"
       sx={{
         position: "relative",
         display: "flex",
@@ -204,7 +204,7 @@ function Reviews() {
               gap: "20px",
             }}
           >
-            <Typography variant="heading">Our Team</Typography>
+            <Typography variant="heading">Insights</Typography>
             <Typography
               variant="normal"
               sx={{
@@ -213,9 +213,9 @@ function Reviews() {
                 textAlign: "center",
               }}
             >
-              Meet the team
+              See what our clients
               <br />
-              behind the magic
+              are saying about us
             </Typography>
           </Box>
 

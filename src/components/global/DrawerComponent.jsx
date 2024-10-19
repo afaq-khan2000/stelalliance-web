@@ -10,7 +10,7 @@ const DrawerComponent = ({ open, onClose, children }) => {
       onClose={onClose}
       sx={{
         "& .MuiDrawer-paper": {
-          width: { xs: "100%", md: "40%" },
+          width: { xs: "100%", md: "50%" },
           backgroundColor: "secondary.background",
           color: "#fff",
           // border: "2px solid #FFBD1F",
@@ -21,6 +21,11 @@ const DrawerComponent = ({ open, onClose, children }) => {
           borderBottomLeftRadius: "20px",
           py: "40px",
           px: "40px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          zIndex: 9999,
         },
       }}
     >

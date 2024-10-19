@@ -2,23 +2,32 @@ import React, { useRef } from "react";
 import { Box, Button, Container, Typography } from "@mui/material";
 // react-player for youtube video
 import ReactPlayer from "react-player/youtube";
-import { Logo, MessageLeft, MessageRight } from "../../assets/images";
+import {
+  Logo,
+  MessageLeft,
+  MessageRight,
+  Spons1,
+  Spons2,
+  Spons3,
+  Spons4,
+  Spons5,
+  Spons6,
+  Spons8,
+  Spons9,
+} from "../../assets/images";
 // using react-marquee-slider
 import Marquee, { Motion, randomIntFromInterval } from "react-marquee-slider";
 
 function CEOMessage() {
   const ltr = [
-    { logo: Logo },
-    { logo: Logo },
-    { logo: Logo },
-    { logo: Logo },
-    { logo: Logo },
-    { logo: Logo },
-    { logo: Logo },
-    { logo: Logo },
-    { logo: Logo },
-    { logo: Logo },
-    { logo: Logo },
+    { logo: Spons1 },
+    { logo: Spons2 },
+    { logo: Spons3 },
+    { logo: Spons4 },
+    { logo: Spons5 },
+    { logo: Spons6 },
+    { logo: Spons8 },
+    { logo: Spons9 },
   ];
 
   return (
@@ -51,7 +60,7 @@ function CEOMessage() {
                 flexDirection: { xs: "column", md: "row" },
               }}
             >
-              <Box
+              {/* <Box
                 sx={{
                   // padding: "10px",
                   width: { xs: "100%", md: "30%" },
@@ -71,7 +80,7 @@ function CEOMessage() {
                   muted={true} // Mute the video to prevent autoplay issues in browsers (optional)
                   style={{}} // You can apply additional styling here
                 />
-              </Box>
+              </Box> */}
               <Box
                 sx={{
                   display: "flex",
@@ -79,7 +88,7 @@ function CEOMessage() {
                   alignItems: "center",
                   justifyContent: "center",
                   textAlign: "center",
-                  width: { xs: "100%", md: "70%" },
+                  width: { xs: "100%", md: "50%" },
                   height: "250px",
                   border: "1px solid #313131",
                   borderRadius: "30px",
@@ -166,9 +175,102 @@ function CEOMessage() {
                   }}
                 />
               </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  gap: "20px",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  textAlign: "center",
+                  width: { xs: "100%", md: "50%" },
+                  height: "250px",
+                  border: "1px solid #313131",
+                  borderRadius: "30px",
+                  padding: "30px",
+                  backgroundColor: "secondary.background",
+                }}
+              >
+                <Box
+                  component="img"
+                  src={MessageLeft}
+                  alt="message"
+                  sx={{
+                    display: { xs: "none", md: "block" },
+                    height: "150px",
+                    width: "auto",
+                    objectFit: "contain",
+                  }}
+                />
+                <Box sx={{ display: "flex", flexDirection: "column" }}>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      gap: "10px",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Box
+                      component="img"
+                      src={MessageLeft}
+                      alt="message"
+                      sx={{
+                        display: { xs: "block", md: "none" },
+                        height: "50px",
+                        width: "auto",
+                        objectFit: "contain",
+                      }}
+                    />
+                    <Typography
+                      variant="normal"
+                      sx={{
+                        color: "secondary.main",
+                        fontSize: { md: "20px", xs: "16px" },
+                      }}
+                    >
+                      Our Vision
+                    </Typography>
+                    <Box
+                      component="img"
+                      src={MessageRight}
+                      alt="message"
+                      sx={{
+                        display: { xs: "block", md: "none" },
+                        height: "50px",
+                        width: "auto",
+                        objectFit: "contain",
+                      }}
+                    />
+                  </Box>
+                  <Typography
+                    variant="normal"
+                    sx={{
+                      color: "primary.main",
+                      fontSize: { xs: "12px", md: "16px" },
+                      marginTop: "20px",
+                    }}
+                  >
+                    To elevate the human experience by leveraging technology to
+                    foster intellectual growth, inspire societal development,
+                    and create transformative applications that enrich lives and
+                    empower future generations.
+                  </Typography>
+                </Box>
+                <Box
+                  component="img"
+                  src={MessageRight}
+                  alt="message"
+                  sx={{
+                    display: { xs: "none", md: "block" },
+                    height: "150px",
+                    width: "auto",
+                    objectFit: "contain",
+                  }}
+                />
+              </Box>
             </Box>
 
-            <Box
+            {/* <Box
               sx={{
                 display: "flex",
                 flexDirection: { xs: "column", md: "row" },
@@ -227,7 +329,7 @@ function CEOMessage() {
                   Our dedication to innovation, collaboration, and excellence
                 </Typography>
               </Box>
-            </Box>
+            </Box> */}
 
             <Box
               sx={{
@@ -235,21 +337,12 @@ function CEOMessage() {
                 flexDirection: "column",
                 gap: "20px",
                 position: "relative",
-                mt: "20px",
+                mt: "100px",
               }}
             >
-              <Typography
-                variant="normal"
-                sx={{
-                  color: "primary.light",
-                  fontSize: { xs: "12px", md: "16px" },
-                  textAlign: "center",
-                }}
-              >
-                As seen and loved on:
-              </Typography>
               <Box
                 sx={{
+                  pb: "20px",
                   "&::before": {
                     content: '""',
                     position: "absolute",
@@ -288,13 +381,16 @@ function CEOMessage() {
                       sx={{
                         p: 2,
                         width: "150px",
-                        height: "auto",
+                        height: "150px",
+                        objectFit: "contain",
                         mx: 1,
                         cursor: "pointer",
-                        filter: "grayscale(100%)",
-                        "&:hover": {
-                          filter: "grayscale(0%)",
-                        },
+                        // backgroundColor: "primary.background",
+                        // mixBlendMode: "lighten",
+                        // filter: "grayscale(100%)",
+                        // "&:hover": {
+                        //   filter: "grayscale(0%)",
+                        // },
                       }}
                       component="img"
                       src={object.logo}

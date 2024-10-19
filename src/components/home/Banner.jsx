@@ -6,7 +6,12 @@ import DrawerComponent from "../global/DrawerComponent";
 import ContactForm from "./ContactForm";
 import JoinUsForm from "./JoinUsForm";
 
-function Banner() {
+function Banner({
+  openDrawer,
+  setOpenDrawer,
+  openDrawer2,
+  setOpenDrawer2,
+}) {
   const scrollToContact = (id) => {
     document.getElementById(id).scrollIntoView({
       behavior: "smooth",
@@ -15,11 +20,11 @@ function Banner() {
   };
 
   const navLinks = [
-    { id: "our-story", title: "Our Story" },
-    { id: "our-work", title: "Our Work" },
+    { id: "our-story", title: "Our Mission" },
+    { id: "our-work", title: "Portfolio" },
     { id: "services", title: "Services" },
     { id: "about-us", title: "About Us" },
-    { id: "faq", title: "FAQ" },
+    { id: "reviews", title: "Reviews" },
     { id: "join-us", title: "Join Us" },
   ];
 
@@ -27,13 +32,11 @@ function Banner() {
     { title: "Client Projects", value: "20+" },
     { title: "Lines of Code", value: "100k+" },
     { title: "Successfull Deliveries", value: "50+" },
-    { title: "Raised by Partners", value: "$260+" },
+    { title: "Raised by Partners", value: "$260k+" },
   ];
 
   const textsToChange = ["Innovate", "Ideate", "Grow"];
   const [textIndex, setTextIndex] = useState(0);
-  const [openDrawer, setOpenDrawer] = useState(false);
-  const [openDrawer2, setOpenDrawer2] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {

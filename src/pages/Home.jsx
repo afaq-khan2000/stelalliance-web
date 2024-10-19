@@ -1,9 +1,10 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import {
   Banner,
   CEOMessage,
   Faqs,
+  Footer,
   Reviews,
   Services,
   Team,
@@ -12,6 +13,9 @@ import {
 } from "../components/home";
 
 function Home() {
+  const [openDrawer, setOpenDrawer] = useState(false);
+  const [openDrawer2, setOpenDrawer2] = useState(false);
+
   return (
     <Box
       sx={{
@@ -19,13 +23,24 @@ function Home() {
         width: { xs: "100vw", md: "calc(100vw - 20px)" },
       }}
     >
-      <Banner />
+      <Banner
+        setOpenDrawer={setOpenDrawer}
+        setOpenDrawer2={setOpenDrawer2}
+        openDrawer={openDrawer}
+        openDrawer2={openDrawer2}
+      />
       <CEOMessage />
       <Work />
       <Services />
+      <Reviews />
       <Team />
       <Faqs />
-      <Reviews />
+      <Footer
+        setOpenDrawer={setOpenDrawer}
+        setOpenDrawer2={setOpenDrawer2}
+        openDrawer={openDrawer}
+        openDrawer2={openDrawer2}
+      />
       {/* <WorkMethod />
       <Faqs />
       <Contact /> */}
