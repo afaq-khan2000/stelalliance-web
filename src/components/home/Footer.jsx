@@ -312,7 +312,13 @@ function Footer({ setOpenDrawer, setOpenDrawer2, openDrawer, openDrawer2 }) {
                           fontWeight: 400,
                           cursor: "pointer",
                         }}
-                        onClick={() => scrollToContact(link.id)}
+                        onClick={() => {
+                          if (link.id === "join-us") {
+                            setOpenDrawer2(true);
+                          } else {
+                            scrollToContact(link.id);
+                          }
+                        }}
                       >
                         {link.title}
                       </Typography>
