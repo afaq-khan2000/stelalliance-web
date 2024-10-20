@@ -70,105 +70,104 @@ function Reviews() {
   const reviewData = [
     {
       id: 1,
-      name: "Alex",
+      name: "Guy Bennett",
       image: null,
-      role: "CEO @ Google",
+      role: "Globalstock news",
       review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      platform: "Clutch",
-      rating: 4.8,
+        "Stelalliance provides exceptional work in generative AI, truly remarkable in their field.",
+      platform: "Upwork",
+      rating: 5.0,
     },
     {
       id: 2,
-      name: "John",
+      name: "Allison Macquire",
       image: null,
-      role: "CTO @ Microsoft",
-      review:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      platform: "Upwork",
+      role: "COO @ Estate Magnets",
+      review: "Great experience working with their team. The team was organized, well-mannered, and good to work with.",
+      platform: "LinkedIn",
       rating: 4.7,
     },
     {
       id: 3,
-      name: "Emma",
+      name: "Syed Hamza Imran",
       image: null,
-      role: "CFO @ Amazon",
+      role: "Marketing Director @ SL Corporations",
       review:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      platform: "Clutch",
+        "Highly skilled team with great communication. Delivered ahead of schedule and beyond expectations.",
+      platform: "LinkedIn",
       rating: 4.9,
     },
     {
       id: 4,
-      name: "Sophia",
+      name: "Qadar Sarfaraz",
       image: null,
-      role: "COO @ Facebook",
+      role: "CEO @ Airmans ground",
       review:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Fast, reliable, and professional. They handled our complex project with ease.",
       platform: "Upwork",
-      rating: 4.6,
+      rating: 4.7,
     },
     {
       id: 5,
-      name: "Liam",
+      name: "Iftikhar Yazdani",
       image: null,
-      role: "CMO @ Apple",
+      role: "MD @ Rah-e-Qamar",
       review:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
-      platform: "Clutch",
+        "They provided excellent service from start to finish. Their knowledge in AI and automation has transformed the way we handle data, leading to significant. Highly recommended!",
+      platform: "LinkedIn",
       rating: 4.9,
     },
     {
       id: 6,
-      name: "Olivia",
+      name: "Hamza Malik",
       image: null,
-      role: "CHRO @ Netflix",
+      role: "Co founder @ DealerPro",
       review:
-        "Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-      platform: "Upwork",
+      "Their ability to manage complex projects with ease really stood out. The SaaS solution they built for us has transformed our customer interaction processes.",
+      platform: "Linkedin",
       rating: 4.8,
     },
-    {
-      id: 7,
-      name: "Noah",
-      image: null,
-      role: "CIO @ Tesla",
-      review:
-        "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.",
-      platform: "Clutch",
-      rating: 4.7,
-    },
-    {
-      id: 8,
-      name: "Ava",
-      image: null,
-      role: "CDO @ Uber",
-      review:
-        "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.",
-      platform: "Upwork",
-      rating: 4.9,
-    },
-    {
-      id: 9,
-      name: "William",
-      image: null,
-      role: "CSO @ Airbnb",
-      review:
-        "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.",
-      platform: "Clutch",
-      rating: 4.6,
-    },
-    {
-      id: 10,
-      name: "James",
-      image: null,
-      role: "CPO @ Spotify",
-      review:
-        "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
-      platform: "Upwork",
-      rating: 4.7,
-    },
-  ];
+    // {
+    //   id: 7,
+    //   name: "Noah",
+    //   image: null,
+    //   role: "CIO @ Tesla",
+    //   review:
+    //     "Creative, on time, and professional. Their AI solutions are outstanding.",
+    //   platform: "Clutch",
+    //   rating: 4.7,
+    // },
+    // {
+    //   id: 8,
+    //   name: "Ava",
+    //   image: null,
+    //   role: "CDO @ Uber",
+    //   review:
+    //   "Highly skilled team with great communication. Delivered ahead of schedule and beyond expectations.",
+    //   platform: "Upwork",
+    //   rating: 4.9,
+    // },
+    // {
+    //   id: 9,
+    //   name: "William",
+    //   image: null,
+    //   role: "CSO @ Airbnb",
+    //   review:
+    //     "The team delivered a well-structured and innovative solution that addressed our unique challenges. Their approach is forward-thinking, and they provided great support.",
+    //   platform: "Clutch",
+    //   rating: 4.6,
+    // },
+    // {
+    //   id: 10,
+    //   name: "James",
+    //   image: null,
+    //   role: "CPO @ Spotify",
+    //   review:
+    //     "Their ability to manage complex projects with ease really stood out. The AI solution they built for us has transformed our customer interaction processes.",
+    //   platform: "Upwork",
+    //   rating: 4.7,
+    // },
+];
 
   const pairs = pairReviews(reviewData);
 

@@ -6,12 +6,6 @@ import {
   Case1,
   Case2,
   Case3,
-  Case4,
-  Case5,
-  Case6,
-  Case7,
-  Case8,
-  Case9,
   FooterBG,
   FooterLogo,
 } from "../../assets/images";

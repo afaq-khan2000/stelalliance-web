@@ -6,12 +6,6 @@ import {
   Case1,
   Case2,
   Case3,
-  Case4,
-  Case5,
-  Case6,
-  Case7,
-  Case8,
-  Case9,
 } from "../../assets/images";
 import WorkCard from "./WorkCard";
 
@@ -24,23 +18,21 @@ function Work() {
   const workData = [
     {
       id: 1,
-      title: "Afrock",
+      title: "Stellar Scholar",
       description:
-        "A dynamic platform for African-inspired fashion, built with React and Node.js. Features include custom shopping carts, secure payments, and seamless user authentication.",
-      category: "E-Commerce",
-      hashtags: ["#React", "#NodeJS", "#Fashion", "#Ecommerce"],
+        "A game based application that targets STEM based learning focused on space and aerospace sciences.",
+      category: "Ed-tech",
       image: Case1,
-      techStack: ["React", "Node.js", "MongoDB", "Stripe"],
-      duration: "6 months",
-      completionDate: "June 2023",
+      techStack: ["Unity", "Node.js", "React", "Python"],
+      duration: "14 months",
+      completionDate: "Ongoing",
     },
     {
       id: 2,
-      title: "FitPro",
+      title: "DealerPro",
       description:
-        "A fitness app for tracking workouts and meals, integrating wearables and real-time cloud syncing. Built with React Native for cross-platform compatibility.",
-      category: "Fitness",
-      hashtags: ["#ReactNative", "#Health", "#Fitness", "#Mobile"],
+        "SaaS for UAE car showrooms, offering lead generation via web scraping and a dashboard for managing vehicle listings and potential buyers.",
+      category: "SaaS",
       image: Case2,
       techStack: ["React Native", "Firebase", "Google Fit API"],
       duration: "4 months",
@@ -48,51 +40,15 @@ function Work() {
     },
     {
       id: 3,
-      title: "InsightX",
+      title: "Polaris AI",
       description:
-        "An advanced data visualization platform for predictive analytics. Uses Python and machine learning algorithms to analyze large datasets.",
-      category: "Analytics",
+        "Leading the future of intelligent collaboration with multi-agent systems and cutting-edge tools.",
+      category: "Artificial Intelligence",
       hashtags: ["#Python", "#DataScience", "#ML", "#Analytics"],
       image: Case3,
-      techStack: ["Python", "Pandas", "Scikit-learn", "Dash"],
-      duration: "8 months",
-      completionDate: "December 2022",
-    },
-    {
-      id: 4,
-      title: "ChatAI",
-      description:
-        "A smart AI chatbot for automating customer support with machine learning. Integrated with Slack and WhatsApp for real-time interactions.",
-      category: "AI",
-      hashtags: ["#AI", "#Chatbot", "#Python", "#NLP"],
-      image: Case4,
-      techStack: ["Python", "TensorFlow", "Dialogflow", "Twilio"],
-      duration: "5 months",
-      completionDate: "July 2023",
-    },
-    {
-      id: 5,
-      title: "Homematchx",
-      description:
-        "A unified design system for a SaaS platform, providing consistency across web and mobile interfaces with reusable components.",
-      category: "UI/UX",
-      hashtags: ["#UI", "#UX", "#DesignSystem", "#Figma"],
-      image: Case5,
-      techStack: ["Figma", "Sketch", "Adobe XD"],
-      duration: "3 months",
-      completionDate: "May 2023",
-    },
-    {
-      id: 6,
-      title: "RealConnect",
-      description:
-        "A real-time messaging API supporting web sockets for instant communication, with a focus on scalability and secure data transfer.",
-      category: "Messaging",
-      hashtags: ["#NodeJS", "#Express", "#API", "#WebSockets"],
-      image: Case6,
-      techStack: ["Node.js", "Express", "WebSockets", "Redis"],
-      duration: "7 months",
-      completionDate: "August 2023",
+      techStack: ["Python", "Langchain", "OpenAI", "Docker"],
+      duration: "24 months",
+      completionDate: "Ongoing",
     },
   ];
 
