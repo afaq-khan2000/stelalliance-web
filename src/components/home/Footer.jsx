@@ -3,10 +3,6 @@ import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import "./styles/styles.css";
 // import WorkCard from "./WorkCard";
 import {
-  Case1,
-  Case2,
-  Case3,
-  FooterBG,
   FooterLogo,
 } from "../../assets/images";
 import WorkCard from "./WorkCard";

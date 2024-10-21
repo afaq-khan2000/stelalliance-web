@@ -97,14 +97,14 @@ function Team() {
     },
   ];
 
-  const dummyItems = new Array(3).fill({
+  const dummyItems = new Array(5).fill({
     name: "",
     image: null,
     role: "",
     linkedin: "",
   });
 
-  console.log("teamData", teamData, dummyItems.length);
+  console.log(dummyItems);
 
   return (
     <Box
@@ -189,10 +189,10 @@ function Team() {
                 autoplayInterval={2000}
                 wrapMode="wrap"
               >
-                {teamData.map((team, index) => teamCard(team, index))}
                 {dummyItems.map((team, index) => (
                   <Box key={index} />
                 ))}
+                {teamData.map((team, index) => teamCard(team, index))}
               </Carousel>
             </Box>
             {/* </Box> */}
