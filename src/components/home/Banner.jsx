@@ -6,12 +6,7 @@ import DrawerComponent from "../global/DrawerComponent";
 import ContactForm from "./ContactForm";
 import JoinUsForm from "./JoinUsForm";
 
-function Banner({
-  openDrawer,
-  setOpenDrawer,
-  openDrawer2,
-  setOpenDrawer2,
-}) {
+function Banner({ openDrawer, setOpenDrawer, openDrawer2, setOpenDrawer2 }) {
   const scrollToContact = (id) => {
     document.getElementById(id).scrollIntoView({
       behavior: "smooth",
@@ -35,7 +30,7 @@ function Banner({
     { title: "Raised by Partners", value: "$260k+" },
   ];
 
-  const textsToChange = ["Innovate", "Ideate", "Grow"];
+  const textsToChange = ["Ideate", "Innovate", "Implement"];
   const [textIndex, setTextIndex] = useState(0);
 
   useEffect(() => {
@@ -70,13 +65,17 @@ function Banner({
             right: 0,
             bottom: 0,
             backgroundImage: `url(${bannerBg})`,
-            backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             filter: "brightness(0.5)",
             zIndex: -9999,
+            backgroundSize: {
+              xs: "cover", // For mobile devices (xs breakpoint and below)
+              sm: "80%", // For larger screens (sm breakpoint and above)
+            },
           }}
         />
+
         <Box
           sx={{
             py: { xs: "10px", md: "30px" },
@@ -117,7 +116,7 @@ function Banner({
                   variant="normal"
                   sx={{
                     color: "primary.main",
-                    fontSize: { xs: "12px", md: "14px" },
+                    fontSize: { xs: "12px", md: "14.5px" },
                     fontWeight: 400,
                     cursor: "pointer",
                     transition: "all 0.3s",
@@ -149,7 +148,7 @@ function Banner({
               }}
               onClick={() => setOpenDrawer(true)}
             >
-              CONTACT ME
+              CONTACT US
               <ArrowForwardIos sx={{ fontSize: "14px" }} />
             </Button>
           </Box>
@@ -170,7 +169,8 @@ function Banner({
               sx={{
                 color: "secondary.main",
                 fontSize: { md: "58px", xs: "24px" },
-                fontWeight: 700,
+                fontWeight: 500,
+                marginTop: { xs: "50px", md: "100px" },
                 lineHeight: 1.2,
               }}
             >
@@ -215,7 +215,7 @@ function Banner({
                       sx={{
                         color: "secondary.main",
                         fontSize: { sm: "40px", xs: "20px" },
-                        fontWeight: 700,
+                        fontWeight: 400,
                       }}
                     >
                       {stat.value}

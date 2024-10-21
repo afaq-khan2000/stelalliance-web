@@ -5,29 +5,29 @@ import Accordian from "../global/Accordian";
 function Faqs() {
   const items = [
     {
-      title: "What is your hourly rate?",
+      title: "What types of software solutions do you provide?",
       description:
-        "My hourly rate is $100. I also offer fixed-price packages for specific services. Please contact me for more information.",
+        "We offer a variety of software solutions, including web development, mobile app development, custom software development, and software-as-a-service (SaaS) products tailored to meet the unique needs of our clients.",
     },
     {
-      title: "What is your availability?",
+      title: "How do you ensure the quality and reliability of your software products?",
       description:
-        "I'm currently available for new projects. My schedule is flexible, and I can adjust it to meet your needs.",
+        "We follow a rigorous quality assurance process that includes thorough testing, continuous monitoring, and regular updates to ensure our software products are reliable, secure, and perform optimally.",
+    },
+    {
+      title: "What is your process for starting a new project?",
+      description:
+        "Our process begins with a detailed consultation to understand your requirements, followed by project planning, design, development, testing, and deployment. We maintain open communication throughout the project to ensure your needs are met.",
     },
     {
       title: "Do you offer discounts for long-term projects?",
       description:
-        "Yes, I offer discounts for long-term projects. Please contact me to discuss your project requirements and budget.",
-    },
-    {
-      title: "What is your refund policy?",
-      description:
-        "I offer a 100% money-back guarantee if you're not satisfied with my work. Your satisfaction is my top priority.",
+        "Yes, we offer discounts for long-term projects. Please contact us to discuss your project requirements and budget.",
     },
     {
       title: "Do you provide ongoing support after the project is completed?",
       description:
-        "Yes, I provide ongoing support and maintenance services after the project is completed. I'm here to help you succeed.",
+        "Yes, we provide ongoing support and maintenance services after the project is completed. We're here to help you succeed.",
     },
   ];
 
