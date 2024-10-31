@@ -30,7 +30,7 @@ function Home() {
         openDrawer2={openDrawer2}
       />
       <CEOMessage />
-      <Work />
+      <Work showAll={false} />
       <Services />
       <Reviews />
       <Team />

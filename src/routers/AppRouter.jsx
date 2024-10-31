@@ -1,13 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home } from "../pages";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { About, Home, Portfolio } from "../pages";
 
 function AppRouter() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="*" element={<Home />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );

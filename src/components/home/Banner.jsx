@@ -5,22 +5,45 @@ import { ArrowForwardIos } from "@mui/icons-material";
 import DrawerComponent from "../global/DrawerComponent";
 import ContactForm from "./ContactForm";
 import JoinUsForm from "./JoinUsForm";
+import { useNavigate } from "react-router-dom";
 
 function Banner({ openDrawer, setOpenDrawer, openDrawer2, setOpenDrawer2 }) {
+  const navigate = useNavigate();
+
   const scrollToContact = (id) => {
-    document.getElementById(id).scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
+    // If the current route is not the home page, navigate to home first
+    if (window.location.pathname !== "/") {
+      navigate("/");
+
+      // Delay scrolling to allow time for the route change
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        }
+      }, 300); // Adjust delay as needed
+    } else {
+      // If already on the home page, scroll immediately
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      }
+    }
   };
 
   const navLinks = [
-    { id: "our-story", title: "Our Mission" },
-    { id: "our-work", title: "Portfolio" },
-    { id: "services", title: "Services" },
-    { id: "about-us", title: "About Us" },
-    { id: "reviews", title: "Reviews" },
-    { id: "join-us", title: "Join Us" },
+    { id: "our-story", title: "Our Mission", link: null },
+    { id: "our-work", title: "Portfolio", link: "/portfolio" },
+    { id: "services", title: "Services", link: null },
+    { id: "about-us", title: "About Us", link: "/about" },
+    { id: "reviews", title: "Reviews", link: null },
+    { id: "join-us", title: "Join Us", link: null },
   ];
 
   const stats = [
@@ -99,7 +122,9 @@ function Banner({ openDrawer, setOpenDrawer, openDrawer2, setOpenDrawer2 }) {
                 height: "auto",
                 objectFit: "contain",
                 marginRight: "20px",
+                cursor: "pointer",
               }}
+              onClick={() => navigate("/")}
             />
 
             {/* NAVIGATION LINKS */}
@@ -128,6 +153,12 @@ function Banner({ openDrawer, setOpenDrawer, openDrawer2, setOpenDrawer2 }) {
                   onClick={() => {
                     if (link.id === "join-us") {
                       setOpenDrawer2(true);
+                    }
+                    // else {
+                    //   scrollToContact(link.id);
+                    // }
+                    else if (link.link) {
+                      navigate(link.link);
                     } else {
                       scrollToContact(link.id);
                     }
@@ -240,10 +271,7 @@ function Banner({ openDrawer, setOpenDrawer, openDrawer2, setOpenDrawer2 }) {
         <DrawerComponent open={openDrawer} onClose={() => setOpenDrawer(false)}>
           <ContactForm />
         </DrawerComponent>
-        <DrawerComponent
-          open={openDrawer2}
-          onClose={() => setOpenDrawer2(false)}
-        >
+        <DrawerComponent open={openDrawer2} onClose={() => setOpenDrawer2(false)}>
           <JoinUsForm />
         </DrawerComponent>
       </Container>
