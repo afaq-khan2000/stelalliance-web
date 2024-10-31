@@ -7,7 +7,7 @@ import ContactForm from "./ContactForm";
 import JoinUsForm from "./JoinUsForm";
 import { useNavigate } from "react-router-dom";
 
-function Banner({ openDrawer, setOpenDrawer, openDrawer2, setOpenDrawer2 }) {
+function Banner({ openDrawer, setOpenDrawer, openDrawer2, setOpenDrawer2, showStats = true, textsToChange = ["Ideate", "Innovate", "Implement"], title = "Stelalliance helps you" }) {
   const navigate = useNavigate();
 
   const scrollToContact = (id) => {
@@ -53,7 +53,6 @@ function Banner({ openDrawer, setOpenDrawer, openDrawer2, setOpenDrawer2 }) {
     { title: "Raised by Partners", value: "$260k+" },
   ];
 
-  const textsToChange = ["Ideate", "Innovate", "Implement"];
   const [textIndex, setTextIndex] = useState(0);
 
   useEffect(() => {
@@ -205,7 +204,7 @@ function Banner({ openDrawer, setOpenDrawer, openDrawer2, setOpenDrawer2 }) {
                 lineHeight: 1.2,
               }}
             >
-              Stelalliance helps you
+              {title}
             </Typography>
             <Typography
               variant="normal"
@@ -223,48 +222,50 @@ function Banner({ openDrawer, setOpenDrawer, openDrawer2, setOpenDrawer2 }) {
 
             {/* STATS */}
 
-            <Grid
-              container
-              spacing={2}
-              sx={{
-                mt: { md: "60px", xs: "30px" }, // Adjust margin top based on screen size
-              }}
-            >
-              {stats.map((stat) => (
-                <Grid item xs={6} md={3}>
-                  <Box
-                    sx={{
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      gap: "5px",
-                    }}
-                  >
-                    <Typography
-                      variant="normal"
+            {showStats && (
+              <Grid
+                container
+                spacing={2}
+                sx={{
+                  mt: { md: "60px", xs: "30px" }, // Adjust margin top based on screen size
+                }}
+              >
+                {stats.map((stat) => (
+                  <Grid item xs={6} md={3}>
+                    <Box
                       sx={{
-                        color: "secondary.main",
-                        fontSize: { sm: "40px", xs: "20px" },
-                        fontWeight: 400,
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        gap: "5px",
                       }}
                     >
-                      {stat.value}
-                    </Typography>
-                    <Typography
-                      variant="normal"
-                      sx={{
-                        color: "primary.main",
-                        fontSize: { sm: "24px", xs: "10px" },
-                        fontWeight: 400,
-                      }}
-                    >
-                      {stat.title}
-                    </Typography>
-                  </Box>
-                </Grid>
-              ))}
-            </Grid>
+                      <Typography
+                        variant="normal"
+                        sx={{
+                          color: "secondary.main",
+                          fontSize: { sm: "40px", xs: "20px" },
+                          fontWeight: 400,
+                        }}
+                      >
+                        {stat.value}
+                      </Typography>
+                      <Typography
+                        variant="normal"
+                        sx={{
+                          color: "primary.main",
+                          fontSize: { sm: "24px", xs: "10px" },
+                          fontWeight: 400,
+                        }}
+                      >
+                        {stat.title}
+                      </Typography>
+                    </Box>
+                  </Grid>
+                ))}
+              </Grid>
+            )}
           </Box>
         </Box>
 

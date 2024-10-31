@@ -29,11 +29,11 @@ function Home() {
         openDrawer={openDrawer}
         openDrawer2={openDrawer2}
       />
-      <CEOMessage />
+      {/* <CEOMessage /> */}
       <Work showAll={false} />
       <Services />
       <Reviews />
-      <Team />
+      {/* <Team /> */}
       <Faqs />
       <Footer
         setOpenDrawer={setOpenDrawer}
