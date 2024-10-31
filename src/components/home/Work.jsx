@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import "./styles/styles.css";
 // import WorkCard from "./WorkCard";
-import { Case1, Case2, Case3 } from "../../assets/images";
+import { Case1, Case2, Case3, Case4, Case5, Case6 } from "../../assets/images";
 import WorkCard from "./WorkCard";
 import { useNavigate } from "react-router-dom";
 
@@ -50,67 +50,36 @@ function Work({ showAll = false }) {
     // show more
 
     {
-      id: 1,
-      title: "Stellar Scholar",
-      description: "A game based application that targets STEM based learning focused on space and aerospace sciences.",
-      category: "Ed-tech",
-      image: Case1,
-      techStack: ["Unity", "Node.js", "React", "Python"],
-      duration: "14 months",
-      completionDate: "Ongoing",
+      id: 4,
+      title: "HealthSync",
+      description: "A comprehensive health monitoring app integrating with wearable devices to provide real-time health analytics.",
+      category: "Health-tech",
+      image: Case4,
+      techStack: ["React Native", "Redux", "Node.js", "MongoDB"],
+      duration: "12 months",
+      completionDate: "December 2022",
     },
     {
-      id: 2,
-      title: "DealerPro",
-      description: "SaaS for UAE car showrooms, offering lead generation via web scraping and a dashboard for managing vehicle listings and potential buyers.",
-      category: "SaaS",
-      image: Case2,
-      techStack: ["React Native", "Firebase", "Google Fit API"],
-      duration: "4 months",
-      completionDate: "March 2023",
+      id: 5,
+      title: "EcoTrack",
+      description: "An environmental tracking platform that uses IoT devices to monitor and report on various environmental parameters.",
+      category: "IoT",
+      image: Case5,
+      techStack: ["Angular", "Express", "Node.js", "PostgreSQL"],
+      duration: "18 months",
+      completionDate: "June 2023",
     },
     {
-      id: 3,
-      title: "Polaris AI",
-      description: "Leading the future of intelligent collaboration with multi-agent systems and cutting-edge tools.",
-      category: "Artificial Intelligence",
-      hashtags: ["#Python", "#DataScience", "#ML", "#Analytics"],
-      image: Case3,
-      techStack: ["Python", "Langchain", "OpenAI", "Docker"],
-      duration: "24 months",
-      completionDate: "Ongoing",
+      id: 6,
+      title: "FinAdvisor",
+      description: "A financial advisory tool that leverages AI to provide personalized investment recommendations.",
+      category: "Fin-tech",
+      image: Case6,
+      techStack: ["Vue.js", "Django", "TensorFlow", "MySQL"],
+      duration: "10 months",
+      completionDate: "April 2023",
     },
-    {
-      id: 1,
-      title: "Stellar Scholar",
-      description: "A game based application that targets STEM based learning focused on space and aerospace sciences.",
-      category: "Ed-tech",
-      image: Case1,
-      techStack: ["Unity", "Node.js", "React", "Python"],
-      duration: "14 months",
-      completionDate: "Ongoing",
-    },
-    {
-      id: 2,
-      title: "DealerPro",
-      description: "SaaS for UAE car showrooms, offering lead generation via web scraping and a dashboard for managing vehicle listings and potential buyers.",
-      category: "SaaS",
-      image: Case2,
-      techStack: ["React Native", "Firebase", "Google Fit API"],
-      duration: "4 months",
-      completionDate: "March 2023",
-    },
-    {
-      id: 3,
-      title: "Polaris AI",
-      description: "Leading the future of intelligent collaboration with multi-agent systems and cutting-edge tools.",
-      category: "Artificial Intelligence",
-      hashtags: ["#Python", "#DataScience", "#ML", "#Analytics"],
-      image: Case3,
-      techStack: ["Python", "Langchain", "OpenAI", "Docker"],
-      duration: "24 months",
-      completionDate: "Ongoing",
-    },
+
   ];
 
   const sliceLimit = showAll ? workData.length : 3;

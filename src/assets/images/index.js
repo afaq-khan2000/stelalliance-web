@@ -5,6 +5,10 @@ export { default as MessageRight } from "./message-right.svg";
 export { default as Case1 } from "./case1.png";
 export { default as Case2 } from "./case2.png";
 export { default as Case3 } from "./case3.png";
+export { default as Case4 } from "./case1.avif";
+export { default as Case5 } from "./case4.avif";
+export { default as Case6 } from "./case5.avif";
+
 export { default as Akbar } from "./akbar.png";
 export { default as Amna } from "./amna.png";
 export { default as Basit } from "./basit.png";
