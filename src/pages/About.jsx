@@ -32,7 +32,7 @@ function About() {
         width: { xs: "100vw", md: "calc(100vw - 20px)" },
       }}
     >
-      <Banner setOpenDrawer={setOpenDrawer} setOpenDrawer2={setOpenDrawer2} openDrawer={openDrawer} openDrawer2={openDrawer2} title="Who we are?" textsToChange={["Creators", "Innovators", "Thinkers"]} showStats={false} />
+      <Banner setOpenDrawer={setOpenDrawer} setOpenDrawer2={setOpenDrawer2} openDrawer={openDrawer} openDrawer2={openDrawer2} title="Who we are as a team of visionaries?" textsToChange={["Creators", "Innovators", "Thinkers"]} showStats={false} />
       <CEOMessage />
       <Team />
       <Footer setOpenDrawer={setOpenDrawer} setOpenDrawer2={setOpenDrawer2} openDrawer={openDrawer} openDrawer2={openDrawer2} />
