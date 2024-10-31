@@ -16,6 +16,11 @@ function Portfolio() {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [openDrawer2, setOpenDrawer2] = useState(false);
 
+  // scroll to top on load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Box
       sx={{
