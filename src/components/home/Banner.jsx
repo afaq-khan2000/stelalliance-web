@@ -38,7 +38,6 @@ function Banner({ openDrawer, setOpenDrawer, openDrawer2, setOpenDrawer2, showSt
   };
 
   const navLinks = [
-    { id: "our-story", title: "Our Mission", link: null },
     { id: "our-work", title: "Portfolio", link: "/portfolio" },
     { id: "services", title: "Services", link: null },
     { id: "about-us", title: "About Us", link: "/about" },
@@ -48,7 +47,7 @@ function Banner({ openDrawer, setOpenDrawer, openDrawer2, setOpenDrawer2, showSt
 
   const stats = [
     { title: "Client Projects", value: "20+" },
-    { title: "Lines of Code", value: "100k+" },
+    { title: "Lines of Code Written", value: "100k+" },
     { title: "Successfull Deliveries", value: "50+" },
     { title: "Raised by Partners", value: "$260k+" },
   ];
