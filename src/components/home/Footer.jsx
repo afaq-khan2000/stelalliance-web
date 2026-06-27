@@ -46,7 +46,7 @@ function Footer({ setOpenDrawer, setOpenDrawer2, openDrawer, openDrawer2 }) {
           }}
         />
       ),
-      title: "+923237426337",
+      title: "+92 346 5343726",
     },
     {
       icon: (
@@ -58,7 +58,7 @@ function Footer({ setOpenDrawer, setOpenDrawer2, openDrawer, openDrawer2 }) {
         />
       ),
       title:
-        "  NASTP-Alpha, Old Airport Rd, Old Chaklala Cantt Rawalpindi - 46000",
+        "NASTP-Alpha, Old Airport Road, Islamabad, Pakistan",
     },
   ];
 
