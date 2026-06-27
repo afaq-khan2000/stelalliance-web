@@ -5,29 +5,34 @@ import Accordian from "../global/Accordian";
 function Faqs() {
   const items = [
     {
-      title: "What types of software solutions do you provide?",
+      title: "What does Stelalliance actually do?",
       description:
-        "We offer a variety of software solutions, including web development, mobile app development, custom software development, and software-as-a-service (SaaS) products tailored to meet the unique needs of our clients.",
+        "Stelalliance is a technology group operating at the intersection of software engineering, AI, cybersecurity, and education innovation. We build custom software and SaaS platforms, deliver managed cybersecurity services, and run Stellar Scholar — our space and STREAM education initiative active in schools across Pakistan.",
     },
     {
-      title: "How do you ensure the quality and reliability of your software products?",
+      title: "Where do you operate?",
       description:
-        "We follow a rigorous quality assurance process that includes thorough testing, continuous monitoring, and regular updates to ensure our software products are reliable, secure, and perform optimally.",
+        "We are headquartered at NASTP-Alpha, Islamabad, Pakistan, with active operations across Pakistan, Kuwait, Canada, and the wider GCC region.",
     },
     {
-      title: "What is your process for starting a new project?",
+      title: "What is Stellar Scholar and Astrobot Academy?",
       description:
-        "Our process begins with a detailed consultation to understand your requirements, followed by project planning, design, development, testing, and deployment. We maintain open communication throughout the project to ensure your needs are met.",
+        "Stellar Scholar is our space and STREAM education initiative that ignites children's interest in rocketry and space sciences through game-based learning. Astrobot Academy is its delivery arm — deploying Robotics, AI, and Space Sciences modules in real classrooms, training teachers, and managing day-to-day delivery across partner school networks. We have a national MOU with Meezan School System targeting 1,000+ campuses, and affiliations with SUPARCO, NASA Space Apps, and UNESCO.",
     },
     {
-      title: "Do you offer discounts for long-term projects?",
+      title: "What cybersecurity services do you offer?",
       description:
-        "Yes, we offer discounts for long-term projects. Please contact us to discuss your project requirements and budget.",
+        "We are a Managed Security Service Provider (MSSP) covering the full security lifecycle: Offensive Security (red teaming, penetration testing, adversary simulation), Defensive Security (SOC design, threat hunting, incident response), Cloud & Application Security, Identity & Access Management, Data Security & Privacy, AI & Emerging Tech Security, OT & Critical Infrastructure, and Governance, Risk & Compliance.",
     },
     {
-      title: "Do you provide ongoing support after the project is completed?",
+      title: "How do you approach software development?",
       description:
-        "Yes, we provide ongoing support and maintenance services after the project is completed. We're here to help you succeed.",
+        "We engage as an embedded technical partner rather than a one-off vendor — from initial product strategy and MVP through to post-launch scaling. Security is built into the development lifecycle from day one, not bolted on after the fact. Our engineering foundation underpins everything the group builds.",
+    },
+    {
+      title: "How do I get started or request an assessment?",
+      description:
+        "Reach out via the Contact Us form or email info@stelalliance.com. For cybersecurity engagements, we begin with a scoping call to align objectives, constraints, and the right engagement model for your environment. For software projects, we start with a discovery session to define requirements and roadmap.",
     },
   ];
 
