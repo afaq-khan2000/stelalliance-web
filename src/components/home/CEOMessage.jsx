@@ -156,11 +156,7 @@ function CEOMessage() {
                       marginTop: "20px",
                     }}
                   >
-                    To pioneer innovative software solutions through
-                    interdisciplinary collaboration, driving business success,
-                    empowering individuals, and crafting applications that
-                    inspire, educate, and advance society toward a smarter,
-                    connected world.
+                    To build at the intersection of software engineering, artificial intelligence, cybersecurity, and education innovation — creating platforms that secure, scale, and educate in equal measure.
                   </Typography>
                 </Box>
                 <Box
@@ -250,10 +246,7 @@ function CEOMessage() {
                       marginTop: "20px",
                     }}
                   >
-                    To elevate the human experience by leveraging technology to
-                    foster intellectual growth, inspire societal development,
-                    and create transformative applications that enrich lives and
-                    empower future generations.
+                    To elevate the human experience by leveraging technology to foster intellectual growth, inspire societal development, and extend curiosity to the next generation of scientists and engineers.
                   </Typography>
                 </Box>
                 <Box
